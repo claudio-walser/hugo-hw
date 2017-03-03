@@ -1,0 +1,154 @@
+# Page settings
+baseurl = "localhost:1313"
+title = "Rechtsberatung Walser"
+languageCode = "de-ch"
+theme = "hugo-elate-theme"
+
+[params]
+  
+  custom_css = ["css/custom1.css", "css/custom2.css"]
+
+  # Meta
+  author = "Heinz Walser"
+  description = "Rechtsberatung Walser"
+  email = "heinz.walser@gmail.com"
+  
+
+
+  # Navigation
+  [params.navigation]
+    brand = "Rechtsberatung Walser"
+    home = "Willkommen"
+    services = "Rechtsgebiete"
+    contact = "Kontakt"
+    about = "Über mich"
+    links = "Links"
+
+  
+  # Hero section
+  [params.hero]
+    title = "Ihr gutes Recht"
+    subtitle = 'Haben Sie rechtliche Probleme? Fühlen Sie sich ungerecht behandelt? '
+ 
+
+
+  [[params.intro.item]]
+    title = "Beratung"
+    description = "Als pat. Rechtsagent mit über 30 Jahren Erfahrung als Rechtsberater und Tätigkeit in der öffentlichen Verwaltung berate ich Sie in alltäglichen Fragen kompetent und umfassend. Rufen Sie an."
+    icon = "icon-bulb"
+    img = "img_7.jpg"
+
+  [[params.intro.item]]
+    title = "Mandate"
+    description = "Selbstverständlich übernehme ich auch Mandate in Ihrem Auftrag. Wenn immer möglich, steht für mich in streitigen Fällen eine aussergerichtliche Lösung mit der Gegenpartei im Vordergrund."
+    icon = "icon-wrench"
+    img = "img_8.jpg"
+
+  [[params.intro.item]]
+    title = "Behörden"
+    description = "Ich berate Sie auch im Umgang mit den Behörden. Ich biete Ihnen Hilfe bei Einsprachen und Stellungnahmen an. Ich schreibe die Eingaben für Sie oder trete je nach Wunsch in Kontakt mit der Behörde."
+    icon = "icon-rocket"
+    img = "img_10.jpg"
+
+
+
+
+  # Services section
+  [params.services]
+    enable = true
+    title = "Rechtsgebiete"
+    description = "Stark in allen Bereichen"
+
+    [[params.services.item]]
+      title = "Güter- &amp; Erbrecht"
+      description = "<ul><li>Beratung für die Ausarbeitung von Ehe- und Erbverträgen</li><li>Willensvollstrecker- und Erbenvertretermandate</li><li>Durchführung von Erbteilungen</li><li>Allgemeine Hilfeleistungen bei Todesfällen für die administrativen Belange</li><li>Beratung in der Ausarbeitung von Testamenten</li></ul>"
+      icon = "icon-anchor"
+
+    [[params.services.item]]
+      title = "Allgemeines"
+      description = "<ul><li>Personenrecht einschl. Namensänderungsverfahren</li><li>Eheschliessungsverfahren</li><li>Kindesrecht einschl. Adoption</li><li>Nachbarrecht</li><li>Zivilprozessrecht</li><li>und Weiteres</li></ul>"
+      icon = "icon-layers2"
+
+    [[params.services.item]]
+      title = "Vorsorgeauftrag"
+      description = "<ul><li>Beratung in der Ausarbeitung von Vorsorgeaufträgen (Bestimmung einer Person für die Vertretung bei eintretender Urteilsunfähigkeit)</li></ul>"
+      icon = "icon-video2"
+
+    [[params.services.item]]
+      title = "Scheidung &amp; Trennung"
+      description = "<ul><li>Beratung im Zusammenhang mit einer Scheidung oder Trennung inklusive Abfassung von Trennungsvereinbarungen und Scheidungskonventionen</li></ul>"      
+      icon = "icon-monitor"
+
+    [[params.services.item]]
+      title = "Vertragsrecht"
+      description = "<ul><li>Ausarbeitung von Verträgen und Überprüfung (Kauf-, Miet- Arbeits- und Darlehensverträge usw.)</li></ul>"
+      icon = "icon-video2"
+
+    [[params.services.item]]
+      title = "SchKG"
+      description = "<ul><li>Interessenwahrung im Verfahren der Schuldbetreibung und Konkurs</li></ul>"      
+      icon = "icon-monitor"
+
+
+    [[params.services.item]]
+      title = "Steuerrecht"
+      description = "<ul><li>Ausfüllen der jährlichen Steuererklärung(Einkommens- und Vermögenssteuer) mit allfällige Einspracheverfahren</li><li>Grundstückgewinnsteuer</li><li>Erbschafts- und Schenkungssteuer</li></ul>"
+      icon = "icon-video2"
+
+    [[params.services.item]]
+      title = "Verwaltungsverfahren"
+      description = "<ul><li>Eingaben an Verwaltung und Behörden jeglicher Art</li><li>Durchführung von Rechtsmittelverfahren</li></ul>"      
+      icon = "icon-monitor"
+
+
+
+  # Contact section
+  [params.contact]
+    enable = true
+    map = true
+    title = "Treten Sie in Kontakt"
+    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    
+    # Available icons: http://simplelineicons.com/
+    details = [
+        ["icon-home", "Walser, Heinz<br />Amatännenstrasse 9, 8882 Unterterzen/SG"],
+        ["icon-phone", "081 710 37 12"],
+        ["icon-envelope", "walser.heinz@gmail.com"],
+        ["icon-globe", "www.rechtsberatung-walser.ch"]
+      ]
+
+    name = "Name"
+    email = "Email"
+    phone = "Telefon"
+    message = "Nachricht"
+    button = "Senden"
+
+
+
+
+  # About section
+  [params.about]
+    enable = false
+    title = "Über mich"
+    description = "Hier brauchen wir noch ein bisschen mehr Text oder wir löschen das wieder ganz."
+
+
+
+  # About section
+  [params.links]
+    enable = true
+    title = "Wichtige Adressen"
+    description = "<ul> <li><a href='https://www.admin.ch/gov/de/start/bundesrecht/systematische-sammlung.html'>Systematische Sammlung des Bundesrechts</a></li> <li><a href='http://www.bger.ch/'>Bundesgerichtsentscheide</a></li> <li><a href='https://www.gesetzessammlung.sg.ch/'>St. Gallische Gesetzesammlung</a></li> <li><a href='http://www.sg.ch/home/publikationen___services/publikationen/gerichts--und-verwaltungspraxis.html'>St. Gallische Gerichts- und Verwaltungspraxis</a></li> <li><a href='http://jusletter.weblaw.ch/juslissues/2017/875.html'>Juristische online-Zeitschrift Schweiz</a></li> <li><a href='http://www.gerichte.sg.ch/'>Gerichte des Kantons St. Gallen</a></li> <li><a href='http://www.afhn.sg.ch/'>Amtsnotariate des Kantons St. Gallen</a></li> <li><a href='http://www.zefix.ch/'>Handelsregister</a></li> <li><a href='http://www.sav-fsa.ch/'>Schweizerischer Anwaltsverband</a></li> <li><a href='https://www.anwaltsverbandsg.ch/'>St. Gallischer Anwaltsverband</a></li> <li><a href='http://www.rechtsagentenverband.ch/'>St. Gallischer Rechtsagentenverband</a></li> <li><a href='http://www.steuern.sg.ch/'>Steueramt des Kantons St. Gallen</a></li> <li><a href='http://steuerrevue.ch/'>Fachzeitschrift für Steuerwesen</a></li> </ul>"
+
+
+
+
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = '<br />&copy; Heinz Walser. Alle Rechte vorbehalten.
+    <br>Created by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> <br />
+    Images: <a href="http://pexels.com/" target="_blank">Pexels</a>,
+    <a href="http://plmd.me/" target="_blank">plmd.me</a> <br>
+    Hugo port by: <a href="https://github.com/saey55" target="_blank">saey55</a>'
