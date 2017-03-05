@@ -94,7 +94,7 @@ theme = "hugo-elate-theme"
     [[params.services.item]]
       title = "Steuerrecht"
       description = "<ul><li>Ausfüllen der jährlichen Steuererklärung(Einkommens- und Vermögenssteuer) mit allfällige Einspracheverfahren</li><li>Grundstückgewinnsteuer</li><li>Erbschafts- und Schenkungssteuer</li></ul>"
-      icon = "icon-pencil-square-o"
+      icon = "icon-paper"
 
     [[params.services.item]]
       title = "Verwaltungsverfahren"
