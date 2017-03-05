@@ -131,7 +131,7 @@ theme = "hugo-elate-theme"
   [params.about]
     enable = true
     title = "Über mich"
-    description = "<img class=\"about\" src=\"/images/about.jpg\"><br />Hier ist es für mich schwierig mir etwa aus den Fingern zu denken."
+    description = "<img class=\"about\" src=\"/images/about.jpg\"><br /><br />Hier ist es für mich schwierig mir etwa aus den Fingern zu saugen."
 
 
 
