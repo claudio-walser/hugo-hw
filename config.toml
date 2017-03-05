@@ -42,13 +42,13 @@ theme = "hugo-elate-theme"
   [[params.intro.item]]
     title = "Mandate"
     description = "Selbstverständlich übernehme ich auch Mandate in Ihrem Auftrag. Wenn immer möglich, steht für mich in streitigen Fällen eine aussergerichtliche Lösung mit der Gegenpartei im Vordergrund."
-    icon = "icon-wrench"
+    icon = "icon-archive"
     img = "img_8.jpg"
 
   [[params.intro.item]]
     title = "Behörden"
     description = "Ich berate Sie auch im Umgang mit den Behörden. Ich biete Ihnen Hilfe bei Einsprachen und Stellungnahmen an. Ich schreibe die Eingaben für Sie oder trete je nach Wunsch in Kontakt mit der Behörde."
-    icon = "icon-rocket"
+    icon = "icon-institution"
     img = "img_10.jpg"
 
 
@@ -63,43 +63,43 @@ theme = "hugo-elate-theme"
     [[params.services.item]]
       title = "Güter- &amp; Erbrecht"
       description = "<ul><li>Beratung für die Ausarbeitung von Ehe- und Erbverträgen</li><li>Willensvollstrecker- und Erbenvertretermandate</li><li>Durchführung von Erbteilungen</li><li>Allgemeine Hilfeleistungen bei Todesfällen für die administrativen Belange</li><li>Beratung in der Ausarbeitung von Testamenten</li></ul>"
-      icon = "icon-anchor"
+      icon = "icon-cubes"
 
     [[params.services.item]]
       title = "Allgemeines"
       description = "<ul><li>Personenrecht einschl. Namensänderungsverfahren</li><li>Eheschliessungsverfahren</li><li>Kindesrecht einschl. Adoption</li><li>Nachbarrecht</li><li>Zivilprozessrecht</li><li>und Weiteres</li></ul>"
-      icon = "icon-layers2"
+      icon = "icon-legal"
 
     [[params.services.item]]
       title = "Vorsorgeauftrag"
       description = "<ul><li>Beratung in der Ausarbeitung von Vorsorgeaufträgen (Bestimmung einer Person für die Vertretung bei eintretender Urteilsunfähigkeit)</li></ul>"
-      icon = "icon-video2"
+      icon = "icon-money"
 
     [[params.services.item]]
       title = "Scheidung &amp; Trennung"
       description = "<ul><li>Beratung im Zusammenhang mit einer Scheidung oder Trennung inklusive Abfassung von Trennungsvereinbarungen und Scheidungskonventionen</li></ul>"      
-      icon = "icon-monitor"
+      icon = "icon-venus-mars"
 
     [[params.services.item]]
       title = "Vertragsrecht"
       description = "<ul><li>Ausarbeitung von Verträgen und Überprüfung (Kauf-, Miet- Arbeits- und Darlehensverträge usw.)</li></ul>"
-      icon = "icon-video2"
+      icon = "icon-contract"
 
     [[params.services.item]]
       title = "SchKG"
       description = "<ul><li>Interessenwahrung im Verfahren der Schuldbetreibung und Konkurs</li></ul>"      
-      icon = "icon-monitor"
+      icon = "icon-unlink"
 
 
     [[params.services.item]]
       title = "Steuerrecht"
       description = "<ul><li>Ausfüllen der jährlichen Steuererklärung(Einkommens- und Vermögenssteuer) mit allfällige Einspracheverfahren</li><li>Grundstückgewinnsteuer</li><li>Erbschafts- und Schenkungssteuer</li></ul>"
-      icon = "icon-video2"
+      icon = "icon-pencil-square-o"
 
     [[params.services.item]]
       title = "Verwaltungsverfahren"
       description = "<ul><li>Eingaben an Verwaltung und Behörden jeglicher Art</li><li>Durchführung von Rechtsmittelverfahren</li></ul>"      
-      icon = "icon-monitor"
+      icon = "icon-institution"
 
 
 
