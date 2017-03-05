@@ -1,6 +1,6 @@
 # Page settings
 baseurl = "localhost:1313"
-title = "Rechtsberatung Walser"
+title = "Rechtsberatung Heinz Walser - Pat. Rechtsagent"
 languageCode = "de-ch"
 theme = "hugo-elate-theme"
 
@@ -11,13 +11,14 @@ theme = "hugo-elate-theme"
   # Meta
   author = "Heinz Walser"
   description = "Rechtsberatung Walser"
-  email = "heinz.walser@gmail.com"
+  email = "HeWal.Rechtsberatung@gmail.com"
   
 
 
   # Navigation
   [params.navigation]
-    brand = "Rechtsberatung Walser"
+    brand = "Rechtsberatung"
+    brandSub = "<br /><span>Heinz Walser Pat. Rechtsagent</span>"
     home = "Willkommen"
     services = "Rechtsgebiete"
     contact = "Kontakt"
@@ -107,14 +108,14 @@ theme = "hugo-elate-theme"
     enable = true
     map = true
     title = "Treten Sie in Kontakt"
-    description = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+    description = "Zögern Sie nicht mit mir Kontakt aufzunehmen. Sei es für eine Auskunft oder eine detaillierte Offerte."
     
     # Available icons: http://simplelineicons.com/
     details = [
-        ["icon-home", "Walser, Heinz<br />Amatännenstrasse 9, 8882 Unterterzen/SG"],
-        ["icon-phone", "081 710 37 12"],
-        ["icon-envelope", "walser.heinz@gmail.com"],
-        ["icon-globe", "www.rechtsberatung-walser.ch"]
+        ["icon-home", "Walser, Heinz<br />Amatännenstrasse 9, 8882 Unterterzen"],
+        ["icon-phone", "079 318 11 31"],
+        ["icon-envelope", "<a href=\"mailto:HeWal.Rechtsberatung@gmail.com\">HeWal.Rechtsberatung@gmail.com</a>"],
+        ["icon-globe", "<a href=\"https://www.rechtsberatung-walser.ch\">www.rechtsberatung-walser.ch</a>"]
       ]
 
     name = "Name"
@@ -128,9 +129,9 @@ theme = "hugo-elate-theme"
 
   # About section
   [params.about]
-    enable = false
+    enable = true
     title = "Über mich"
-    description = "Hier brauchen wir noch ein bisschen mehr Text oder wir löschen das wieder ganz."
+    description = "<img class=\"about\" src=\"/images/about.jpg\"><br />Hier ist es für mich schwierig mir etwa aus den Fingern zu denken."
 
 
 

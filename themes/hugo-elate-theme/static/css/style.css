@@ -202,6 +202,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   opacity: 1;
   top: 0;
+  height: 70px;
   margin-top: 40px;
 }
 @media screen and (max-width: 768px) {
@@ -216,6 +217,7 @@ h1, h2, h3, h4, h5, h6 {
   #fh5co-header .navbar-brand {
     color: #52d3aa !important;
   }
+
   #fh5co-header #navbar li a {
     color: rgba(0, 0, 0, 0.5) !important;
     -webkit-transition: 0.3s;
@@ -304,6 +306,12 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 0;
   color: #fff;
 }
+
+#fh5co-header .navbar-brand span {
+  font-size: 20px;
+  font-weight: normal;
+}
+
 #fh5co-header.navbar-fixed-top {
   position: fixed !important;
   background: #fff;
@@ -398,15 +406,14 @@ h1, h2, h3, h4, h5, h6 {
   background-image: -ms-repeating-linear-gradient(top left, #3f95ea 0%, #52d3aa 100%);
 }
 
-#fh5co-links * {
-  color: black;
+#fh5co-links *, #fh5co-contact *, #fh5co-intro .fh5co-block > .fh5co-text {
+  color: #333;
 }
 
-#fh5co-links {
-  padding-top: 70px;
+#fh5co-about img {
+  width: 200px;
+  border-radius: 100px;
 }
-
-#fh5co-links 
 
 #fh5co-home, #fh5co-home .text-wrap {
   height: 900px;
@@ -443,7 +450,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 28px;
   line-height: 38px;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.8);
+  color: white;
   margin: 0;
 }
 
@@ -621,8 +628,8 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.1);
 }
 
-#fh5co-services, #fh5co-testimonials, #fh5co-counters, #fh5co-work, #fh5co-contact, #fh5co-about {
-  padding: 4em 0;
+#fh5co-services, #fh5co-testimonials, #fh5co-counters, #fh5co-work, #fh5co-contact, #fh5co-about, #fh5co-links {
+  padding: 7em 0;
 }
 @media screen and (max-width: 768px) {
   #fh5co-services, #fh5co-testimonials, #fh5co-counters, #fh5co-work, #fh5co-contact, #fh5co-about {
@@ -651,7 +658,7 @@ h1, h2, h3, h4, h5, h6 {
   background-image: -ms-repeating-linear-gradient(top left, #3f95ea 0%, #52d3aa 100%);
   overflow: hidden;
   position: relative;
-  color: rgba(255, 255, 255, 0.7);
+  color: white;
 }
 #fh5co-services:before, #fh5co-services:after {
   position: absolute;
@@ -1224,6 +1231,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #7f7f7f;
   position: relative;
 }
+#footer p {
+  font-size: 10px;
+}
+
 #footer .gotop {
   position: absolute;
   top: -20px;
@@ -1264,7 +1275,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn.btn-primary {
   background: #52d3aa;
-  color: #fff;
+  color: #fff !important;
   border: none !important;
   border: 2px solid transparent !important;
 }
