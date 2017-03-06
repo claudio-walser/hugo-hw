@@ -414,6 +414,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 20px;
     text-align: left;
     padding-top: 80px;
+    line-height: normal;
 }
 
 #fh5co-about img {
