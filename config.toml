@@ -108,7 +108,7 @@ theme = "hugo-elate-theme"
     enable = true
     map = true
     title = "Treten Sie in Kontakt"
-    description = "Zögern Sie nicht mit mir Kontakt aufzunehmen. Sei es für eine Auskunft oder eine detaillierte Offerte."
+    description = "Zögern Sie nicht, mit mir Kontakt aufzunehmen."
     
     # Available icons: http://simplelineicons.com/
     details = [
