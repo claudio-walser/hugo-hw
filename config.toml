@@ -29,7 +29,7 @@ theme = "hugo-elate-theme"
   # Hero section
   [params.hero]
     title = "Ihr gutes Recht"
-    subtitle = 'Haben Sie rechtliche Probleme? Fühlen Sie sich ungerecht behandelt? '
+    subtitle = 'Haben Sie rechtliche Probleme? Fühlen Sie sich ungerecht behandelt?<br /><div class="subtitle-address">Heinz Walser Pat. Rechtsagent<br />Amatännenstrasse 9<br />8882 Unterterzen<br />Tel. 079 318 11 31</div>'
  
 
 
@@ -131,7 +131,7 @@ theme = "hugo-elate-theme"
   [params.about]
     enable = true
     title = "Über mich"
-    description = "<img class=\"about\" src=\"/images/about.jpg\"><br /><br />Hier ist es für mich schwierig mir etwa aus den Fingern zu saugen."
+    description = "<img class=\"about\" src=\"/images/about.jpg\"><br /><br />Ich habe über 40 Jahre Verwaltungserfahrung auf Stufe Gemeinde und Kanton mit langjähriger Praxis    im Personenrecht, Eheschliessungsverfahren, im Ehescheidungs- und Ehetrennungsverfahren, im Güter- und Erbrecht als auch im Schuldbetreibungs- und Konkursrecht, Steuer- sowie Zivilprozessrecht. Aber auch im Arbeitsrecht, in Mietstreitigkeiten sowie im allgemeinen Vertragsrecht habe ich mir entsprechende Fachkompetenzen aneignen können.<br /><br />Im Jahr 1977 habe ich das Patent als Rechtsagent erworben. Im Rahmen meiner langjährigen Tätigkeit als Rechtsberater bei der Beratungsstelle für Familien in St.Gallen bis 2014 konnte ich wertvolle Erfahrungen im Beratungsbereich sammeln.<br /><br />Seit 2015 habe ich meine unselbständige Tätigkeit beim Departement des Innern des Kantons St.Gallen als Amtsleiter aufgegeben und biete nun den Menschen meine zielführende und lösungsorientierte Rechtsberatung als Rechtsagent auf selbständiger Basis an."
 
 
 
