@@ -406,10 +406,14 @@ h1, h2, h3, h4, h5, h6 {
   background-image: -ms-repeating-linear-gradient(top left, #3f95ea 0%, #52d3aa 100%);
 }
 
-.navbar-collapse {
-  background: white;
-  margin-top: 32px;
+
+@media screen and (max-width: 768px) {
+  .navbar-collapse {
+    background: white;
+    margin-top: 32px;
+  }
 }
+
 
 #fh5co-links *, #fh5co-contact *, #fh5co-intro .fh5co-block > .fh5co-text {
   color: #333;
