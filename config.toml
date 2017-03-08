@@ -112,7 +112,7 @@ theme = "hugo-elate-theme"
     
     # Available icons: http://simplelineicons.com/
     details = [
-        ["icon-home", "Walser, Heinz<br />Amatännenstrasse 9, 8882 Unterterzen"],
+        ["icon-home", "Walser Heinz<br />Amatännenstrasse 9, 8882 Unterterzen"],
         ["icon-phone", "079 318 11 31"],
         ["icon-envelope", "<a href=\"mailto:HeWal.Rechtsberatung@gmail.com\">HeWal.Rechtsberatung@gmail.com</a>"],
         ["icon-globe", "<a href=\"https://www.rechtsberatung-walser.ch\">www.rechtsberatung-walser.ch</a>"]
