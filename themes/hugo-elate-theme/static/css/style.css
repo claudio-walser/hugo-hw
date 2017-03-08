@@ -415,7 +415,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-#fh5co-links *, #fh5co-contact *, #fh5co-intro .fh5co-block > .fh5co-text {
+#fh5co-links *, #fh5co-contact *, #fh5co-intro .fh5co-block > .fh5co-text, #fh5co-about h3 {
   color: #333;
 }
 
