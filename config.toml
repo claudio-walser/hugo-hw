@@ -28,7 +28,7 @@ theme = "hugo-elate-theme"
   
   # Hero section
   [params.hero]
-    title = "Ihr Partner für Rechstfragen"
+    title = "Ihr Partner für Rechtsfragen"
     subtitle = 'Haben Sie rechtliche Probleme? Fühlen Sie sich ungerecht behandelt?<br /><div class="subtitle-address"><div id="srv-text">Heinz Walser<br />pat. Rechtsagent<br />Amatännenstrasse 9<br />8882 Unterterzen<br />Tel. 079 318 11 31</div><div id="srv-logo"></div></div>'
  
 
