@@ -1,6 +1,6 @@
 # Page settings
 baseurl = "localhost:1313"
-title = "Rechtsberatung Heinz Walser - Pat. Rechtsagent"
+title = "Rechtsberatung Heinz Walser - pat. Rechtsagent"
 languageCode = "de-ch"
 theme = "hugo-elate-theme"
 
@@ -18,7 +18,7 @@ theme = "hugo-elate-theme"
   # Navigation
   [params.navigation]
     brand = "Rechtsberatung"
-    brandSub = "<br /><span>Heinz Walser Pat. Rechtsagent</span>"
+    brandSub = "<br /><span>Heinz Walser<br />pat. Rechtsagent</span>"
     home = "Willkommen"
     services = "Rechtsgebiete"
     contact = "Kontakt"
@@ -28,8 +28,8 @@ theme = "hugo-elate-theme"
   
   # Hero section
   [params.hero]
-    title = "Ihr gutes Recht"
-    subtitle = 'Haben Sie rechtliche Probleme? Fühlen Sie sich ungerecht behandelt?<br /><div class="subtitle-address"><div id="srv-text">Heinz Walser Pat. Rechtsagent<br />Amatännenstrasse 9<br />8882 Unterterzen<br />Tel. 079 318 11 31</div><div id="srv-logo"></div></div>'
+    title = "Ihr Partner für Rechstfragen"
+    subtitle = 'Haben Sie rechtliche Probleme? Fühlen Sie sich ungerecht behandelt?<br /><div class="subtitle-address"><div id="srv-text">Heinz Walser<br />pat. Rechtsagent<br />Amatännenstrasse 9<br />8882 Unterterzen<br />Tel. 079 318 11 31</div><div id="srv-logo"></div></div>'
  
 
 
