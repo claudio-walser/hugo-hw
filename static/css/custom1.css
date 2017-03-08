@@ -2,11 +2,6 @@
   height: 70px;
 }
 
-#fh5co-header .navbar-brand span {
-  font-size: 20px;
-  /*font-weight: normal;*/
-}
-
 @media screen and (max-width: 768px) {
   .navbar-collapse {
     background: white;
@@ -64,4 +59,10 @@
 
 .btn.btn-primary {
   color: white !important;
+}
+
+#logo-sub {
+  margin-top: 8px;
+  font-size: 20px;
+  
 }

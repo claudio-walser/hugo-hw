@@ -18,7 +18,7 @@ theme = "hugo-elate-theme"
   # Navigation
   [params.navigation]
     brand = "Rechtsberatung"
-    brandSub = "<br /><span>Heinz Walser&nbsp;&nbsp;&nbsp;pat. Rechtsagent</span>"
+    brandSub = "<div id='logo-sub'>Heinz Walser&nbsp;&nbsp;&nbsp;pat. Rechtsagent</div>"
     home = "Willkommen"
     services = "Rechtsgebiete"
     contact = "Kontakt"
