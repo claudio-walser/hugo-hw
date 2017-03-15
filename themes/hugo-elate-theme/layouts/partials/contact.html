@@ -22,7 +22,7 @@
 
 				<div class="col-md-6 to-animate">
 					<h3>{{ with .Site.Params.contact.form }}{{ . | markdownify }}{{ end }}</h3>
-					<form method="post" action="//formspree.io/{{ with .Site.Params.email }}{{.}}{{ end }}">
+					<form id="contact-form" method="post" action="//formspree.io/{{ with .Site.Params.email }}{{.}}{{ end }}">
 					<div class="form-group ">
 						{{ with .Site.Params.contact.name }}
 						<label for="name" class="sr-only">{{ . | markdownify }}</label>
@@ -32,7 +32,7 @@
 					<div class="form-group ">
 						{{ with .Site.Params.contact.email }}
 						<label for="email" class="sr-only">{{ . | markdownify }}</label>
-						<input id="email" class="form-control" name="_replyto" placeholder="{{ . }}" type="email">
+						<input id="email" class="form-control" name="email" placeholder="{{ . }}" type="email">
 						{{ end }}
 					</div>
 					<div class="form-group ">

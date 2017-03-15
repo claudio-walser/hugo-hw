@@ -464,7 +464,21 @@
 	};
 
 
-	
+	var handleForm = function() {
+		$("#contact-form").on("submit", function() {
+			console.log($("#name").val());
+			jQuery.post("send-form.php", {
+				name: $("#name").val(),
+				email: $("#email").val(),
+				phone: $("#phone").val(),
+				message: $("#message").val()
+			}).done(function(data) {
+				console.log( "Data Loaded: " + data );
+			});
+
+			return false;
+		});
+	};
 	
 
 
@@ -486,6 +500,8 @@
 
 		goToTop();
 
+		handleForm();
+
 
 		// Animations
 		homeAnimate();
@@ -497,7 +513,6 @@
 		linksAnimate();
 		countersAnimate();
 		contactAnimate();
-		
 
 	});
 
