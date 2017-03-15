@@ -466,14 +466,30 @@
 
 	var handleForm = function() {
 		$("#contact-form").on("submit", function() {
-			console.log($("#name").val());
+			$(".form-loading").show();
 			jQuery.post("send-form.php", {
 				name: $("#name").val(),
 				email: $("#email").val(),
 				phone: $("#phone").val(),
 				message: $("#message").val()
 			}).done(function(data) {
-				console.log( "Data Loaded: " + data );
+				data = $.parseJSON(data);
+				var firstErrorElement = false;
+				$.each(data.fields, function(index, value) {
+					var el = $("#" + index);
+					if (value != 'ok') {
+						if (el) {
+							if (firstErrorElement == false) {
+								firstErrorElement = true;
+								el.focus();
+							}
+							el.addClass('error');
+						}
+					} else {
+						el.removeClass('error');
+					}
+				});
+				$(".form-loading").hide();
 			});
 
 			return false;
