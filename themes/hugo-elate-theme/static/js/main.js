@@ -482,6 +482,7 @@
 							if (firstErrorElement == false) {
 								firstErrorElement = true;
 								el.focus();
+								$(".form-error").slideDown(400).delay(3000).slideUp(400);
 							}
 							el.addClass('error');
 						}
@@ -489,6 +490,13 @@
 						el.removeClass('error');
 					}
 				});
+				if (data.sent == 'ok') {
+					$(".form-success").slideDown(400).delay(3000).slideUp(400);
+					// name: $("#name").val('');
+					// email: $("#email").val('');
+					// phone: $("#phone").val('');
+					// message: $("#message").val('');
+				}
 				$(".form-loading").hide();
 			});
 

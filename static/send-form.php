@@ -1,5 +1,6 @@
 <?php
 
+sleep(2);
 
 $response = array(
 	'fields' => array(
@@ -16,15 +17,16 @@ function stringIsValid($value) {
 }
 
 function numberIsValid($value) {
-	return !empty(trim($value));
+	return preg_match("/^[0-9\+\s]+$/", trim($value));
 }
 
 function emailIsValid($value) {
-	return !empty(trim($value));
+	return filter_var(trim($value), FILTER_VALIDATE_EMAIL);
 }
 
 function sendForm($data) {
-
+	$sent = mail ('walsercl@gmx.ch','Betreff', 'Nachricht');
+	var_dump($sent);
 	return true;
 }
 
@@ -41,9 +43,10 @@ if (!empty($_POST)) {
 	if (stringIsValid($_POST['message'])) {
 		$response['fields']['message'] = 'ok';
 	}
-
-	if (sendForm($_POST)) {
-		$response['sent'] = 'ok';
+	if (!in_array("error", $response['fields'])) {
+		if (sendForm($_POST)) {
+			$response['sent'] = 'ok';
+		}
 	}
 }
 
