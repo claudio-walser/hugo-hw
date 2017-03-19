@@ -464,7 +464,7 @@
 		}
 	};
 
-	var user = 'hewal-rechtsberatung';
+	var user = 'HeWal.Rechtsberatung';
 
 	var handleForm = function() {
 		$("#contact-form").on("submit", function() {
