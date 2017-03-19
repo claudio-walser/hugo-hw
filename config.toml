@@ -20,7 +20,7 @@ theme = "hugo-elate-theme"
     brand = "Rechtsberatung"
     brandSub = "<div id='logo-sub'>Heinz Walser&nbsp;&nbsp;&nbsp;pat. Rechtsagent</div>"
     home = "Willkommen"
-    services = "Rechtsgebiete"
+    services = "Fachgebiete"
     contact = "Kontakt"
     about = "Über mich"
     links = "Links"
@@ -57,11 +57,11 @@ theme = "hugo-elate-theme"
   # Services section
   [params.services]
     enable = true
-    title = "Rechtsgebiete"
+    title = "Fachgebiete"
     description = "Stark in allen Bereichen"
 
     [[params.services.item]]
-      title = "Güter- &amp; Erbrecht"
+      title = "Ehe- &amp; Erbrecht"
       description = "<ul><li>Beratung für die Ausarbeitung von Ehe- und Erbverträgen</li><li>Willensvollstrecker- und Erbenvertretermandate</li><li>Durchführung von Erbteilungen</li><li>Allgemeine Hilfeleistungen bei Todesfällen für die administrativen Belange</li><li>Beratung in der Ausarbeitung von Testamenten</li></ul>"
       icon = "icon-cubes"
 
@@ -108,7 +108,7 @@ theme = "hugo-elate-theme"
     enable = true
     map = true
     title = "Treten Sie in Kontakt"
-    description = "Zögern Sie nicht, mit mir Kontakt aufzunehmen."
+    description = "Für ein unverbindliches Gespräch stehe ich gerne zur Verfügung."
     
     # Available icons: http://simplelineicons.com/
     details = [
@@ -131,7 +131,7 @@ theme = "hugo-elate-theme"
   [params.about]
     enable = true
     title = "Über mich"
-    description = "<img class=\"about\" src=\"/images/about.jpg\"><br /><br />Ich habe über 40 Jahre Verwaltungserfahrung auf Stufe Gemeinde und Kanton mit langjähriger Praxis    im Personenrecht, Eheschliessungsverfahren, im Ehescheidungs- und Ehetrennungsverfahren, im Güter- und Erbrecht als auch im Schuldbetreibungs- und Konkursrecht, Steuer- sowie Zivilprozessrecht. Aber auch im Arbeitsrecht, in Mietstreitigkeiten sowie im allgemeinen Vertragsrecht habe ich mir entsprechende Fachkompetenzen aneignen können.<br /><br />Im Jahr 1977 habe ich das Patent als Rechtsagent erworben. Im Rahmen meiner langjährigen Tätigkeit als Rechtsberater bei der Beratungsstelle für Familien in St.Gallen bis 2014 konnte ich wertvolle Erfahrungen im Beratungsbereich sammeln.<br /><br />Seit 2015 habe ich meine unselbständige Tätigkeit beim Departement des Innern des Kantons St.Gallen als Amtsleiter aufgegeben und biete nun eine zielführende und lösungsorientierte Rechtsberatung als Rechtsagent auf selbständiger Basis an."
+    description = "<img class=\"about\" src=\"/images/about.jpg\"><br /><br />Ich habe über 40 Jahre Verwaltungserfahrung auf Stufe Gemeinde und Kanton mit langjähriger Praxis    im Personenrecht, Eheschliessungsverfahren, im Ehescheidungs- und Ehetrennungsverfahren, im Güter- und Erbrecht als auch im Schuldbetreibungs- und Konkursrecht, Steuer- sowie Zivilprozessrecht. Aber auch im Arbeitsrecht, in Mietstreitigkeiten sowie im allgemeinen Vertragsrecht habe ich mir entsprechende Fachkompetenzen aneignen können.<br /><br />Im Jahr 1977 habe ich das Patent als Rechtsagent erworben. Im Rahmen meiner langjährigen Tätigkeit als Rechtsberater bei der Beratungsstelle für Familien in St.Gallen bis 2014 konnte ich wertvolle Erfahrungen im Beratungsbereich sammeln.<br /><br />Seit 2015 habe ich meine Tätigkeit beim Departement des Innern des Kantons St.Gallen als Amtsleiter aufgegeben und biete nun eine zielführende und lösungsorientierte Rechtsberatung als Rechtsagent auf selbständiger Basis an."
 
 
 
