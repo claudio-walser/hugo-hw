@@ -2,10 +2,11 @@
   height: 70px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 995px) {
   .navbar-collapse {
     background: white;
     margin-top: 32px;
+    border: 1px solid #333;
   }
 }
 
