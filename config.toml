@@ -36,7 +36,7 @@ theme = "hugo-elate-theme"
   [[params.intro.item]]
     title = "Beratung"
     description = "Als pat. Rechtsagent mit über 30 Jahren Erfahrung als Rechtsberater und Tätigkeit in der öffentlichen Verwaltung berate ich Sie in alltäglichen Fragen kompetent und umfassend. Rufen Sie an."
-    icon = "icon-bulb"
+    icon = "icon-user"
     img = "img_7.jpg"
 
   [[params.intro.item]]
@@ -94,7 +94,7 @@ theme = "hugo-elate-theme"
     [[params.services.item]]
       title = "Steuerrecht"
       description = "<ul><li>Ausfüllen der jährlichen Steuererklärung(Einkommens- und Vermögenssteuer) mit allfälligen Einspracheverfahren</li><li>Grundstückgewinnsteuer</li><li>Erbschafts- und Schenkungssteuer</li></ul>"
-      icon = "icon-paper"
+      icon = "icon-database"
 
     [[params.services.item]]
       title = "Verwaltungsverfahren"
