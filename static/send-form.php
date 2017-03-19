@@ -32,7 +32,7 @@ function sendForm($data) {
 	$sent = false;
 	try {
 		$httpClient = new GuzzleAdapter(new Client());
-		$sparky = new SparkPost($httpClient, ['key'=>'secret-key']);
+		$sparky = new SparkPost($httpClient, ['key'=>'spark-post-secret-key']);
 
 		$promise = $sparky->transmissions->post([
 		    'content' => [
@@ -54,6 +54,7 @@ function sendForm($data) {
 		        ],
 		    ]
 		]);
+		print_r($promise);
 		//$sent = true;
 	} catch (Exception $e) {
 		print($e->getMessage());
