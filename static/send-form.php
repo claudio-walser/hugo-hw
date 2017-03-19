@@ -57,8 +57,8 @@ function sendForm($data) {
 
 		$sent = true;
 	} catch (Exception $e) {
-		print($e->getMessage());
-		print_r($e->getTraceAsString());
+		//print($e->getMessage());
+		//print_r($e->getTraceAsString());
 	}
 	return $sent;
 }
