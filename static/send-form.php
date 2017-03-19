@@ -1,10 +1,7 @@
 <?php
 
 require 'vendor/autoload.php';
-
-use SparkPost\SparkPost;
-use GuzzleHttp\Client;
-use Http\Adapter\Guzzle6\Client as GuzzleAdapter;
+require 'mail-config.php';
 
 $response = array(
 	'fields' => array(
@@ -30,40 +27,42 @@ function emailIsValid($value) {
 
 function sendForm($data) {
 	$sent = false;
-	try {
-		$httpClient = new GuzzleAdapter(new Client());
-		$sparky = new SparkPost($httpClient, ['key'=>'spark-post-secret-key']);
+	$body = "Ein Formular wurde mit den folgenden Angaben versandt.
 
-		$promise = $sparky->transmissions->post([
-		    'content' => [
-		        'from' => [
-		            'name' => 'SparkMailer',
-		            'email' => 'hewal.rechtsberatung@gmail.com',
-		        ],
-		        'subject' => 'First Mailing in PHP',
-		        'html' => '<html><body><h1>Congratulations, {{name}}!</h1><p>You just sent your very first mailing!</p></body></html>',
-		        'text' => 'Congratulations, {{name}}!! You just sent your very first mailing!',
-		    ],
-		    'substitution_data' => ['name' => $data['name']],
-		    'recipients' => [
-		        [
-		            'address' => [
-		                'name' => 'Claudio Walser',
-		                'email' => 'walsercl@gmx.ch',
-		            ],
-		        ],
-		    ]
-		]);
-		print_r($promise);
-		//$sent = true;
+<b>Name:</b><blockquote>" . $data['name'] . "</blockquote>
+<b>E-Mail:</b><blockquote>" . $data['email'] . "</blockquote>
+<b>Telefon:</b><blockquote>" . $data['phone'] . "</blockquote>
+<b>Nachricht:</b><blockquote>" . $data['message'] . "</blockquote>";
+
+	try {
+		$mail = new PHPMailer(true);
+		$mail->IsSMTP();
+
+
+		//$mail->SMTPDebug  = 2;
+		$mail->SMTPAuth   = true;
+		$mail->SMTPSecure = "tls";
+		$mail->Host       = SMTP_SERVER;
+		$mail->Port       = SMTP_PORT;
+		$mail->Username   = SMTP_USER;
+		$mail->Password   = SMTP_PASS;
+		$mail->AddReplyTo(SMTP_USER, SMTP_REALNAME);
+		$mail->AddAddress(RECEIPIENT, RECEIPIENT_REALNAME);
+		$mail->SetFrom(RECEIPIENT, RECEIPIENT_REALNAME);
+		$mail->Subject = 'Formular von ' . $data['email'] . ' ' . $data['name'];
+		$mail->AltBody = $body;
+		$mail->MsgHTML(nl2br($body));
+		$mail->Send();
+
+		$sent = true;
 	} catch (Exception $e) {
 		print($e->getMessage());
-		print_r($e->getStackTrace());
+		print_r($e->getTraceAsString());
 	}
 	return $sent;
 }
 
-if (!empty($_POST)) {
+if (!empty($_POST) && (isset($_POST['lastname']) && empty($_POST['lastname']))) {
 	if (stringIsValid($_POST['name'])) {
 		$response['fields']['name'] = 'ok';
 	}

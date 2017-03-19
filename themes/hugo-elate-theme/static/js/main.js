@@ -2,7 +2,7 @@
 	
 	'use strict';
 
-
+	var domain = 'gmail.com';
 
 	// iPad and iPod detection	
 	var isiPad = function(){
@@ -147,6 +147,7 @@
 	};
 
 
+	var sign = '@'
 
 	// Animations
 	// Home
@@ -463,12 +464,14 @@
 		}
 	};
 
+	var user = 'hewal-rechtsberatung';
 
 	var handleForm = function() {
 		$("#contact-form").on("submit", function() {
 			$(".form-loading").show();
 			jQuery.post("send-form.php", {
 				name: $("#name").val(),
+				lastname: $("#lastname").val(),
 				email: $("#email").val(),
 				phone: $("#phone").val(),
 				message: $("#message").val()
@@ -492,10 +495,11 @@
 				});
 				if (data.sent == 'ok') {
 					$(".form-success").slideDown(400).delay(3000).slideUp(400);
-					// name: $("#name").val('');
-					// email: $("#email").val('');
-					// phone: $("#phone").val('');
-					// message: $("#message").val('');
+					$("#name").val('');
+					$("#lastname").val('');
+					$("#email").val('');
+					$("#phone").val('');
+					$("#message").val('');
 				}
 				$(".form-loading").hide();
 			});
@@ -506,7 +510,12 @@
 	
 
 
-	
+	var completeStuff = function() {
+		var el = $('a.mailto');
+		var stuff = user + sign + domain;
+		el.attr('href', el.attr('class') + ':' + stuff);
+		el.html(stuff);
+	};
 	
 
 	// Document on load.
@@ -537,6 +546,7 @@
 		linksAnimate();
 		countersAnimate();
 		contactAnimate();
+		completeStuff();
 
 	});
 
