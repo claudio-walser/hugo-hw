@@ -1,6 +1,10 @@
 <?php
 
-sleep(2);
+require 'vendor/autoload.php';
+
+use SparkPost\SparkPost;
+use GuzzleHttp\Client;
+use Http\Adapter\Guzzle6\Client as GuzzleAdapter;
 
 $response = array(
 	'fields' => array(
@@ -25,9 +29,37 @@ function emailIsValid($value) {
 }
 
 function sendForm($data) {
-	$sent = mail ('walsercl@gmx.ch','Betreff', 'Nachricht');
-	var_dump($sent);
-	return true;
+	$sent = false;
+	try {
+		$httpClient = new GuzzleAdapter(new Client());
+		$sparky = new SparkPost($httpClient, ['key'=>'secret-key']);
+
+		$promise = $sparky->transmissions->post([
+		    'content' => [
+		        'from' => [
+		            'name' => 'SparkMailer',
+		            'email' => 'hewal.rechtsberatung@gmail.com',
+		        ],
+		        'subject' => 'First Mailing in PHP',
+		        'html' => '<html><body><h1>Congratulations, {{name}}!</h1><p>You just sent your very first mailing!</p></body></html>',
+		        'text' => 'Congratulations, {{name}}!! You just sent your very first mailing!',
+		    ],
+		    'substitution_data' => ['name' => $data['name']],
+		    'recipients' => [
+		        [
+		            'address' => [
+		                'name' => 'Claudio Walser',
+		                'email' => 'walsercl@gmx.ch',
+		            ],
+		        ],
+		    ]
+		]);
+		//$sent = true;
+	} catch (Exception $e) {
+		print($e->getMessage());
+		print_r($e->getStackTrace());
+	}
+	return $sent;
 }
 
 if (!empty($_POST)) {
