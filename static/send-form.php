@@ -48,7 +48,8 @@ function sendForm($data) {
 		$mail->Password   = SMTP_PASS;
 		$mail->AddReplyTo(SMTP_USER, SMTP_REALNAME);
 		$mail->AddAddress(RECEIPIENT, RECEIPIENT_REALNAME);
-		$mail->SetFrom(RECEIPIENT, RECEIPIENT_REALNAME);
+		$mail->AddAddress(SMTP_USER, SMTP_REALNAME);
+		$mail->SetFrom(SMTP_USER, SMTP_REALNAME);
 		$mail->Subject = 'Formular von ' . $data['email'] . ' ' . $data['name'];
 		$mail->AltBody = $body;
 		$mail->MsgHTML(nl2br($body));
