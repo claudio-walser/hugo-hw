@@ -11,7 +11,7 @@ theme = "hugo-elate-theme"
   # Meta
   author = "Heinz Walser"
   description = "Rechtsberatung Walser"
-  email = "HeWal.Rechtsberatung@gmail.com"
+  email = "info@rb-walser.ch"
   
 
 
@@ -115,7 +115,7 @@ theme = "hugo-elate-theme"
         ["icon-home", "Walser Heinz<br />Amatännenstrasse 9, 8882 Unterterzen"],
         ["icon-phone", "079 318 11 31"],
         ["icon-envelope", "<a href=\"\" class=\"mailto\"></a>"],
-        ["icon-globe", "<a href=\"https://www.rechtsberatung-walser.ch\">www.rechtsberatung-walser.ch</a>"]
+        ["icon-globe", "<a href=\"https://www.rb-walser.ch\">www.rb-walser.ch</a>"]
       ]
 
     name = "Name"
