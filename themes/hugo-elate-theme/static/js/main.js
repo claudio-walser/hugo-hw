@@ -2,7 +2,7 @@
 	
 	'use strict';
 
-	var domain = 'gmail.com';
+	var domain = 'rb-walser.ch';
 
 	// iPad and iPod detection	
 	var isiPad = function(){
@@ -464,7 +464,7 @@
 		}
 	};
 
-	var user = 'HeWal.Rechtsberatung';
+	var user = 'info';
 
 	var handleForm = function() {
 		$("#contact-form").on("submit", function() {
