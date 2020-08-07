@@ -72,6 +72,12 @@
   display: none;
 }
 
+#second-name {
+  height: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
 .form-loading {
   background: rgba(255, 255, 255, 0.8);
   position: absolute;

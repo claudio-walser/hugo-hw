@@ -28,6 +28,8 @@
 						{{ with .Site.Params.contact.name }}
 						<label for="name" class="sr-only">{{ . | markdownify }}</label>
 						<input id="name" class="form-control" name="name" placeholder="{{ . }}" type="text">
+						<label for="second-name" class="sr-only">zweiter Name</label>
+						<input id="second-name" class="form-control" name="second-name" placeholder="{{ . }}" type="text">
 						<input id="lastname" class="form-control" name="lastname" placeholder="{{ . }}" type="text">
 						{{ end }}
 					</div>

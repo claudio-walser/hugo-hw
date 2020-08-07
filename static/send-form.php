@@ -26,6 +26,9 @@ function emailIsValid($value) {
 }
 
 function sendForm($data) {
+	if (!empty($data['second-name'])) {
+		return true;
+	}
 	$sent = false;
 	$body = "Ein Formular wurde mit den folgenden Angaben versandt.
 
