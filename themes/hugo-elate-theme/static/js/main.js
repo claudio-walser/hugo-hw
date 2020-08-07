@@ -471,6 +471,7 @@
 			$(".form-loading").show();
 			jQuery.post("send-form.php", {
 				name: $("#name").val(),
+				secondname: $("#second-name").val(),
 				lastname: $("#lastname").val(),
 				email: $("#email").val(),
 				phone: $("#phone").val(),

@@ -26,7 +26,10 @@ function emailIsValid($value) {
 }
 
 function sendForm($data) {
-	if (!empty($data['second-name'])) {
+    if (!isset($data['secondname'])) {
+    	return false;
+    }
+    if (!empty($data['secondname'])) {
 		return true;
 	}
 	$sent = false;
@@ -67,6 +70,7 @@ function sendForm($data) {
 }
 
 if (!empty($_POST) && (isset($_POST['lastname']) && empty($_POST['lastname']))) {
+	$response['fields']['second-name'] = 'ok';
 	if (stringIsValid($_POST['name'])) {
 		$response['fields']['name'] = 'ok';
 	}
